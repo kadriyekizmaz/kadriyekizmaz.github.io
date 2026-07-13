@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kadriye Kizmaz — B2B Marketing That Converts | Munich</title>
+<meta name="description" content="Freelance B2B marketing in Munich. LinkedIn content, CRM & email, and content strategy for SaaS and tech companies. 10+ years, first marketing hire at five startups.">
+<meta property="og:title" content="Kadriye Kizmaz — B2B Marketing That Converts">
+<meta property="og:description" content="LinkedIn, content, and CRM engines for B2B SaaS. Marketing that converts — with receipts.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F6F3EB;
+    --ink:#1B241E;
+    --forest:#1E4A38;
+    --forest-deep:#143528;
+    --moss:#E3EADC;
+    --line:#D8D3C4;
+    --highlight:#F0E77A;
+    --muted:#5D665F;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Archivo',system-ui,sans-serif;
+    font-size:17px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
+  a{color:inherit;}
+  ::selection{background:var(--highlight);}
+
+  /* ---------- Nav ---------- */
+  nav{
+    position:sticky;top:0;z-index:50;
+    background:rgba(246,243,235,.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:16px 24px;max-width:1080px;margin:0 auto;
+  }
+  .logo{
+    font-family:'Instrument Serif',serif;
+    font-size:1.35rem;letter-spacing:.01em;text-decoration:none;
+  }
+  .nav-links{display:flex;gap:28px;align-items:center;}
+  .nav-links a{
+    text-decoration:none;font-size:.92rem;font-weight:500;color:var(--muted);
+  }
+  .nav-links a:hover{color:var(--ink);}
+  .btn{
+    display:inline-block;
+    background:var(--forest);color:#fff;
+    padding:12px 26px;border-radius:100px;
+    text-decoration:none;font-weight:600;font-size:.95rem;
+    transition:background .2s ease, transform .2s ease;
+  }
+  .btn:hover{background:var(--forest-deep);transform:translateY(-1px);}
+  .btn:focus-visible{outline:3px solid var(--forest);outline-offset:3px;}
+  .btn.small{padding:9px 20px;font-size:.88rem;}
+  .btn.light{background:#fff;color:var(--forest);}
+  .btn.light:hover{background:var(--moss);}
+
+  /* ---------- Hero ---------- */
+  .hero{padding:88px 0 72px;}
+  .hero-grid{
+    display:grid;grid-template-columns:1.35fr 1fr;
+    gap:56px;align-items:center;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--forest);margin-bottom:22px;
+  }
+  h1{
+    font-family:'Instrument Serif',serif;
+    font-weight:400;
+    font-size:clamp(2.7rem,6vw,4.4rem);
+    line-height:1.05;
+    letter-spacing:-.01em;
+    margin-bottom:26px;
+  }
+  h1 em{
+    font-style:italic;
+    background:linear-gradient(transparent 62%, var(--highlight) 62%);
+  }
+  .hero p.lede{
+    font-size:1.12rem;max-width:34em;color:var(--ink);
+    margin-bottom:34px;
+  }
+  .hero-cta{display:flex;gap:18px;align-items:center;flex-wrap:wrap;}
+  .quiet-link{
+    font-size:.95rem;font-weight:500;color:var(--muted);
+    text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--line);
+  }
+  .quiet-link:hover{color:var(--ink);}
+  .portrait{
+    position:relative;border-radius:18px;overflow:hidden;
+    background:var(--moss);
+    aspect-ratio:4/5;
+  }
+  .portrait img{width:100%;height:100%;object-fit:cover;display:block;}
+  .portrait .fallback{
+    position:absolute;inset:0;display:flex;flex-direction:column;
+    align-items:center;justify-content:center;gap:8px;
+    color:var(--forest);text-align:center;padding:24px;
+  }
+  .portrait .fallback span{
+    font-family:'Instrument Serif',serif;font-size:4.5rem;line-height:1;
+  }
+  .portrait .fallback small{
+    font-family:'IBM Plex Mono',monospace;font-size:.72rem;color:var(--muted);
+  }
+  .portrait-tag{
+    position:absolute;left:14px;bottom:14px;
+    background:rgba(246,243,235,.94);
+    border-radius:100px;padding:7px 16px;
+    font-family:'IBM Plex Mono',monospace;font-size:.74rem;color:var(--ink);
+  }
+
+  /* ---------- Ticker (signature) ---------- */
+  .ticker{
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+    background:var(--paper);
+    overflow:hidden;white-space:nowrap;
+    padding:16px 0;
+  }
+  .ticker-track{
+    display:inline-block;
+    animation:scroll 38s linear infinite;
+  }
+  .ticker span{
+    font-family:'IBM Plex Mono',monospace;
+    font-size:.9rem;color:var(--ink);
+    margin-right:12px;
+  }
+  .ticker b{color:var(--forest);font-weight:500;}
+  .ticker i{font-style:normal;color:var(--muted);margin:0 18px 0 6px;}
+  @keyframes scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @media (prefers-reduced-motion:reduce){
+    .ticker-track{animation:none;}
+    html{scroll-behavior:auto;}
+  }
+
+  /* ---------- Sections ---------- */
+  section{padding:88px 0;}
+  h2{
+    font-family:'Instrument Serif',serif;
+    font-weight:400;font-size:clamp(1.9rem,3.6vw,2.6rem);
+    margin-bottom:14px;letter-spacing:-.01em;
+  }
+  .section-intro{color:var(--muted);max-width:38em;margin-bottom:44px;}
+
+  /* Services */
+  .services-grid{
+    display:grid;grid-template-columns:repeat(2,1fr);gap:20px;
+  }
+  .service{
+    background:#fff;border:1px solid var(--line);border-radius:16px;
+    padding:30px 28px;
+    transition:transform .2s ease, box-shadow .2s ease;
+  }
+  .service:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(27,36,30,.07);}
+  .service h3{
+    font-family:'Instrument Serif',serif;font-weight:400;
+    font-size:1.35rem;margin-bottom:10px;
+  }
+  .service p{font-size:.96rem;color:var(--muted);}
+
+  /* Brands */
+  .brands{background:var(--moss);}
+  .brands-grid{
+    display:grid;grid-template-columns:repeat(2,1fr);gap:20px;
+  }
+  .brand{
+    background:var(--paper);border-radius:16px;padding:30px 28px;
+    border:1px solid rgba(27,36,30,.06);
+  }
+  .brand .brand-head{
+    display:flex;justify-content:space-between;align-items:baseline;
+    margin-bottom:6px;gap:12px;
+  }
+  .brand h3{
+    font-family:'Instrument Serif',serif;font-weight:400;font-size:1.35rem;
+  }
+  .brand .sector{
+    font-family:'IBM Plex Mono',monospace;font-size:.72rem;
+    color:var(--muted);text-transform:uppercase;letter-spacing:.08em;
+    text-align:right;
+  }
+  .brand ul{list-style:none;margin-top:14px;}
+  .brand li{
+    font-size:.95rem;padding-left:22px;position:relative;margin-bottom:9px;
+  }
+  .brand li::before{
+    content:"→";position:absolute;left:0;color:var(--forest);
+    font-family:'IBM Plex Mono',monospace;
+  }
+  .brand li strong{color:var(--forest);}
+
+  /* About */
+  .about-grid{
+    display:grid;grid-template-columns:1fr 1.5fr;gap:56px;align-items:start;
+  }
+  .about p{margin-bottom:18px;}
+  .about .facts{
+    list-style:none;margin-top:6px;
+    border-top:1px solid var(--line);
+  }
+  .about .facts li{
+    display:flex;justify-content:space-between;gap:16px;
+    padding:13px 0;border-bottom:1px solid var(--line);
+    font-size:.93rem;
+  }
+  .about .facts li span:first-child{
+    font-family:'IBM Plex Mono',monospace;font-size:.78rem;
+    text-transform:uppercase;letter-spacing:.08em;color:var(--muted);
+    padding-top:2px;flex-shrink:0;
+  }
+  .about .facts li span:last-child{text-align:right;}
+
+  /* CTA band */
+  .cta-band{
+    background:var(--forest);color:#fff;
+    border-radius:24px;
+    padding:64px 48px;text-align:center;
+  }
+  .cta-band h2{color:#fff;margin-bottom:12px;}
+  .cta-band p{
+    color:rgba(255,255,255,.82);max-width:34em;margin:0 auto 32px;
+  }
+  .cta-band .contact-line{
+    margin-top:26px;font-size:.92rem;color:rgba(255,255,255,.75);
+  }
+  .cta-band .contact-line a{color:#fff;text-underline-offset:4px;}
+
+  /* Footer */
+  footer{
+    padding:44px 0 56px;border-top:1px solid var(--line);
+    font-size:.88rem;color:var(--muted);
+  }
+  .footer-grid{
+    display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;
+  }
+  footer a{text-underline-offset:4px;}
+  footer .imprint{margin-top:22px;font-size:.8rem;max-width:46em;}
+
+  /* ---------- Mobile ---------- */
+  @media (max-width:820px){
+    .hero{padding:56px 0 48px;}
+    .hero-grid{grid-template-columns:1fr;gap:36px;}
+    .portrait{max-width:340px;}
+    .services-grid,.brands-grid{grid-template-columns:1fr;}
+    .about-grid{grid-template-columns:1fr;gap:36px;}
+    section{padding:64px 0;}
+    .nav-links a.hide-mobile{display:none;}
+    .cta-band{padding:48px 24px;}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="logo" href="#top">Kadriye Kizmaz</a>
+    <div class="nav-links">
+      <a class="hide-mobile" href="#services">Services</a>
+      <a class="hide-mobile" href="#work">Work</a>
+      <a class="hide-mobile" href="#about">About</a>
+      <a class="btn small" href="mailto:kadriyekde@gmail.com?subject=Chemistry%20Call">Book a call</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Freelance B2B Marketing · Munich</p>
+      <h1>Marketing that converts.<br>I brought <em>receipts</em>.</h1>
+      <p class="lede">I help B2B SaaS and tech companies build LinkedIn, content, and CRM engines that turn audiences into pipeline. First marketing hire at five startups — the person who builds it from scratch, then stays to make sure it runs.</p>
+      <div class="hero-cta">
+        <!-- If you have a Calendly/Cal.com link, replace the mailto below with it -->
+        <a class="btn" href="mailto:kadriyekde@gmail.com?subject=Chemistry%20Call">Book a free chemistry call</a>
+        <a class="quiet-link" href="#work">See the numbers ↓</a>
+      </div>
+    </div>
+    <div>
+      <div class="portrait">
+        <!-- Drop your portrait in the same folder as this file, named portrait.jpg -->
+        <img src="portrait.jpg" alt="Kadriye Kizmaz, freelance B2B marketer in Munich" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+        <div class="fallback" style="display:none;">
+          <span>KK</span>
+          <small>add portrait.jpg to this folder</small>
+        </div>
+        <div class="portrait-tag">10+ yrs · B2B SaaS · EN / DE / TR</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="ticker" aria-label="Results from past roles">
+  <div class="ticker-track">
+    <span><b>+270%</b> organic visibility<i>Regiondo</i></span>
+    <span><b>+186%</b> organic social growth<i>Honeypot</i></span>
+    <span><b>+155%</b> LinkedIn followers in 12 months<i>Lilium</i></span>
+    <span><b>32K → 54K</b> newsletter subscribers<i>Lilium</i></span>
+    <span><b>50%+</b> email open rates<i>Honeypot</i></span>
+    <span><b>60+</b> sales landing pages for DACH<i>Regiondo</i></span>
+    <span><b>+110%</b> web traffic via SEO<i>Lilium</i></span>
+    <span><b>+270%</b> organic visibility<i>Regiondo</i></span>
+    <span><b>+186%</b> organic social growth<i>Honeypot</i></span>
+    <span><b>+155%</b> LinkedIn followers in 12 months<i>Lilium</i></span>
+    <span><b>32K → 54K</b> newsletter subscribers<i>Lilium</i></span>
+    <span><b>50%+</b> email open rates<i>Honeypot</i></span>
+    <span><b>60+</b> sales landing pages for DACH<i>Regiondo</i></span>
+    <span><b>+110%</b> web traffic via SEO<i>Lilium</i></span>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <h2>How I can help</h2>
+    <p class="section-intro">Four things I do well, after doing them for a decade. Everything hands-on: strategy that ships, not slide decks that gather dust.</p>
+    <div class="services-grid">
+      <div class="service">
+        <h3>LinkedIn Content &amp; Strategy</h3>
+        <p>Content planning, writing posts that people actually read, profile optimisation, and company page management. Organic reach without the cringe.</p>
+      </div>
+      <div class="service">
+        <h3>CRM &amp; Email Marketing</h3>
+        <p>CRM setup and optimisation, newsletter strategy, email campaigns, and segmentation. Turning subscriber lists into revenue, not spam folders.</p>
+      </div>
+      <div class="service">
+        <h3>Content Marketing</h3>
+        <p>Blog articles, website copy, and employer branding content. Written for humans first, search engines second — in that order, always.</p>
+      </div>
+      <div class="service">
+        <h3>Strategy &amp; Messaging</h3>
+        <p>Tone of voice, messaging frameworks, and content ideation. So your brand sounds like itself everywhere, instead of like everyone else.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="brands" id="work">
+  <div class="wrap">
+    <h2>Brands I've grown</h2>
+    <p class="section-intro">From electric jets to recruiting platforms — different industries, same pattern: build the engine, prove it with numbers.</p>
+    <div class="brands-grid">
+      <div class="brand">
+        <div class="brand-head"><h3>Lilium</h3><span class="sector">Electric Aviation</span></div>
+        <ul>
+          <li><strong>+155%</strong> LinkedIn followers in 12 months</li>
+          <li><strong>+110%</strong> web traffic via SEO</li>
+          <li>Newsletter grown from <strong>32K to 54K</strong> subscribers</li>
+        </ul>
+      </div>
+      <div class="brand">
+        <div class="brand-head"><h3>Honeypot (Xing)</h3><span class="sector">Tech Recruiting</span></div>
+        <ul>
+          <li><strong>+186%</strong> organic social media growth YoY</li>
+          <li><strong>50%+</strong> open rates on targeted email campaigns</li>
+        </ul>
+      </div>
+      <div class="brand">
+        <div class="brand-head"><h3>Regiondo (JSMD)</h3><span class="sector">SaaS Marketplace</span></div>
+        <ul>
+          <li><strong>+270%</strong> organic visibility YoY via SEO &amp; inbound</li>
+          <li><strong>60+</strong> sales landing pages for the DACH market</li>
+        </ul>
+      </div>
+      <div class="brand">
+        <div class="brand-head"><h3>Mentessa</h3><span class="sector">B2B SaaS</span></div>
+        <ul>
+          <li>Product launch campaigns via <strong>HubSpot</strong></li>
+          <li>End-to-end <strong>CRM strategy</strong> for customer retention</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about-grid about">
+    <div>
+      <h2>Hi, I'm Kadriye.</h2>
+    </div>
+    <div>
+      <p>Over 10+ years I've been the first marketing hire at startups: the person who builds the engine from scratch, and the one who stays to make sure it runs. I've done it in B2B SaaS, tech recruiting, and even electric aviation.</p>
+      <p>I work in English, German, and Turkish, I've grown my own LinkedIn to thousands of followers by practising what I preach, and I believe good marketing is mostly clear thinking, written down.</p>
+      <ul class="facts">
+        <li><span>Based in</span><span>Munich, Germany</span></li>
+        <li><span>Focus</span><span>B2B SaaS &amp; tech</span></li>
+        <li><span>Languages</span><span>English · German · Turkish</span></li>
+        <li><span>Available for</span><span>Freelance projects &amp; retainers</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta-band">
+      <h2>Let's work together</h2>
+      <p>Every project starts with a conversation. Pricing depends on scope, timeline, and what you actually need — so let's figure that out together before we discuss numbers. The first 15 minutes are free.</p>
+      <a class="btn light" href="mailto:kadriyekde@gmail.com?subject=Chemistry%20Call">Book a free 15-minute chemistry call</a>
+      <p class="contact-line">
+        or email <a href="mailto:kadriyekde@gmail.com">kadriyekde@gmail.com</a> · call <a href="tel:+4915204271385">+49 152 0427 1385</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <span>© 2026 Kadriye Kizmaz — Munich</span>
+      <span>
+        <a href="https://www.linkedin.com/in/kadriyekizmaz/" target="_blank" rel="noopener">LinkedIn</a> ·
+        <a href="mailto:kadriyekde@gmail.com">Email</a> ·
+        <a href="#impressum">Impressum</a>
+      </span>
+    </div>
+    <p class="imprint" id="impressum"><strong>Impressum</strong> (§ 5 TMG): Kadriye Kizmaz · [Street &amp; No.] · [Postcode] München · E-Mail: kadriyekde@gmail.com · Tel: +49 152 0427 1385. <em>Replace the address placeholders before publishing — an Impressum with a physical address is legally required for commercial websites in Germany.</em></p>
+  </div>
+</footer>
+
+</body>
+</html>
